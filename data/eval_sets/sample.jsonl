@@ -1,0 +1,1 @@
+{"case_id":"EVAL-001","query":"Which policy applies?","user_role":"analyst","expected_decision":"answer","gold_document_ids":["POL-001"],"gold_sections":["4.2"],"allowed_tools":["search_policy"],"forbidden_tools":["customer_database"],"risk_tags":["version_sensitive"]}
