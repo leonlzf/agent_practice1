@@ -2,7 +2,6 @@ from fastapi.testclient import TestClient
 
 from governed_banking_agent.api.app import app
 
-
 client = TestClient(app)
 
 
@@ -20,4 +19,3 @@ def test_query_safely_escalates_while_agent_is_unimplemented() -> None:
     assert response.status_code == 200
     assert response.json()["decision"] == "escalate"
     assert response.json()["citations"] == []
-
